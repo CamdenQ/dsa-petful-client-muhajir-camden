@@ -1,0 +1,33 @@
+.adopt {
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  flex-direction: column;
+  text-align: center;
+}
+
+.adopt img {
+  height: 200px;
+  width: 80%;
+  object-fit: contain;
+}
+
+.adopt button {
+  background: #000;
+  color: #FFF;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+.adopt button:hover {
+  background: gray;
+  cursor: pointer;
+}
+
+.pet {
+  border: solid 3px #000;
+  margin: 2px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+}

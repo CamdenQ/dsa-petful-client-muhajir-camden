@@ -1,0 +1,100 @@
+main.landing-page-main {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+main.landing-page-main .overlay {
+  padding: 0 5%;
+  width: 90%;
+  height: 100%;
+  padding-top: 5%;
+  margin: 0;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient(135deg, #42424269 10%, #2525256b 100%);
+}
+
+/* .landing-page-section {
+  margin: 5%;
+  padding: 5%;
+} */
+
+.landing-page-title {
+  font-family: 'Lexend Peta', sans-serif;
+  font-size: 30px;
+}
+
+.landing-page-body {
+  font-family: 'Open Sans', sans-serif;
+  max-width: 1200;
+}
+
+.landing-page-form {
+}
+
+.landing-page-form input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid white;
+  box-shadow: 0px 1px 1px rgb(82, 82, 82);
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 1px #333;
+}
+
+.landing-page-form button {
+  border: 1px solid;
+  background: rgb(175, 175, 175);
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #333;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 1px #333;
+}
+
+.landing-page-form button:hover,
+.landing-page-form button:active {
+  color: rgb(255, 211, 98);
+}
+
+@media (orientation: portrait) {
+  main.landing-page-main {
+    background: url('../Assets/landing-page-background-portrait.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+@media (orientation: landscape) {
+  main.landing-page-main {
+    background: url('../Assets/landing-page-background-landscape.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .landing-page-title {
+    font-size: 50px;
+  }
+  .landing-page-body,
+  .landing-page-form input,
+  .landing-page-form button {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .landing-page-title {
+    font-size: 80px;
+  }
+  .landing-page-body,
+  .landing-page-form input,
+  .landing-page-form button {
+    font-size: 25px;
+  }
+}
