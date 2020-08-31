@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ApiService from '../api-service';
 
-import './Pets.css'
+import './Pets.css';
 
 export default function Pets(props) {
   const [pets, setPets] = useState({});
@@ -10,16 +10,15 @@ export default function Pets(props) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(e.target)
-    ApiService.removePet(e.target.id)
-    ApiService.removeUser()
+    ApiService.removePet(e.target.id);
+    ApiService.removeUser();
   }
 
   if (!pets.cat || !pets.dog) {
     return <p>Loading...</p>;
   }
   return (
-    <div className='adopt'>
+    <div className="adopt">
       <div className="pet">
         <h2>{pets.cat.name}</h2>
         <img src={pets.cat.imageURL} alt="a cat" />
@@ -29,7 +28,11 @@ export default function Pets(props) {
           <li>Description: {pets.cat.description}</li>
           <li>Story: {pets.cat.story}</li>
         </ul>
-       {props.showAdopt && <button id='cats' onClick={(e) => handleSubmit(e)}>Adopt Me</button>}
+        {props.showAdopt && (
+          <button id="cats" onClick={(e) => handleSubmit(e)}>
+            Adopt Me
+          </button>
+        )}
       </div>
       <div className="pet">
         <h2>{pets.dog.name}</h2>
@@ -40,7 +43,11 @@ export default function Pets(props) {
           <li>Description: {pets.dog.description}</li>
           <li>Story: {pets.dog.story}</li>
         </ul>
-       {props.showAdopt && <button id='dogs' onClick={(e) => handleSubmit(e)}>Adopt Me</button>}
+        {props.showAdopt && (
+          <button id="dogs" onClick={(e) => handleSubmit(e)}>
+            Adopt Me
+          </button>
+        )}
       </div>
     </div>
   );

@@ -1,4 +1,6 @@
-const API_ENDPOINT = 'https://cryptic-savannah-59088.herokuapp.com';
+const API_ENDPOINT = 'http://localhost:8000';
+
+// 'https://cryptic-savannah-59088.herokuapp.com' 'http://localhost:8000'
 
 const ApiService = {
   getPets() {

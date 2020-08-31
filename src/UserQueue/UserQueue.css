@@ -8,3 +8,14 @@
   border-bottom: 2px solid #000;
   padding: 5px 0;
 }
+
+.your-turn-message {
+  color: red;
+}
+
+@media (orientation: landscape) {
+  .queue {
+    width: 20%;
+    margin-left: 0;
+  }
+}
