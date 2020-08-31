@@ -1,4 +1,4 @@
-const API_ENDPOINT = 'http://localhost:8000';
+const API_ENDPOINT = 'https://cryptic-savannah-59088.herokuapp.com';
 
 const ApiService = {
   getPets() {
@@ -16,7 +16,7 @@ const ApiService = {
         'content-type': 'application/json',
       },
       body: JSON.stringify(user),
-    })
+    });
   },
 
   removeUser() {
@@ -25,7 +25,7 @@ const ApiService = {
       headers: {
         'content-type': 'application/json',
       },
-    })
+    });
   },
 
   removePet(pet_type) {
@@ -34,7 +34,7 @@ const ApiService = {
       headers: {
         'content-type': 'application/json',
       },
-    })
+    });
   },
 };
 
