@@ -1,4 +1,4 @@
-const API_ENDPOINT = 'http://localhost:8000';
+const API_ENDPOINT = 'https://cryptic-savannah-59088.herokuapp.com';
 
 // 'https://cryptic-savannah-59088.herokuapp.com' 'http://localhost:8000'
 
